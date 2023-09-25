@@ -12,6 +12,8 @@
 (dolist (head (screen-heads (current-screen)))
   (enable-mode-line (current-screen) head t))
 
+(setf *screen-mode-line-format* "[^B%n^b] %W")
+
 ;; Optionally, load personal settings
 (let ((personal-file-path (merge-pathnames "personal.lisp" *data-dir*)))
   (when (probe-file personal-file-path)
