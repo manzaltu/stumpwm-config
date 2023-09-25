@@ -15,8 +15,9 @@
 ;; Add mode-line modules
 (load-module "cpu")
 (load-module "battery-portable")
+(load-module "mem")
 
-(setf *screen-mode-line-format* "[^B%n^b] %W ^> %C %B")
+(setf *screen-mode-line-format* "[^B%n^b] %W ^> %C %M %B")
 
 ;; Optionally, load personal settings
 (let ((personal-file-path (merge-pathnames "personal.lisp" *data-dir*)))
