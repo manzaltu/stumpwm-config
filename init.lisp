@@ -8,6 +8,9 @@
 (setf *message-window-gravity* :center
       *window-border-style* :thin)
 
+;; Mode-line configuration
+(setf *mode-line-timeout* 2)
+
 ;; Enable mode-line on all screens
 (dolist (head (screen-heads (current-screen)))
   (enable-mode-line (current-screen) head t))
