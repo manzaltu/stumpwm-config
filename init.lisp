@@ -5,4 +5,5 @@
 (in-package :stumpwm)
 
 ;; General configuration
-(setf *message-window-gravity* :center)
+(setf *message-window-gravity* :center
+      *window-border-style* :thin)
