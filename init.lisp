@@ -17,8 +17,9 @@
 (load-module "battery-portable")
 (load-module "mem")
 (load-module "net")
+(load-module "wifi")
 
-(setf *screen-mode-line-format* "[^B%n^b] %W ^> %C %M %l %B")
+(setf *screen-mode-line-format* "[^B%n^b] %W ^> %C %M %l %I %B")
 
 ;; Optionally, load personal settings
 (let ((personal-file-path (merge-pathnames "personal.lisp" *data-dir*)))
