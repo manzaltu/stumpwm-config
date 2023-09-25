@@ -4,6 +4,8 @@ My StumpWM configuration.
 ** Installation
 #+BEGIN_SRC shell
 git clone https://github.com/manzaltu/stumpwm-config ~/.stumpwm.d
+cd ~/.stumpwm.d
+git submodule update --init
 #+END_SRC
 
 ** Getting updates
