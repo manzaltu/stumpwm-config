@@ -6,6 +6,7 @@
 
 ;; General configuration
 (setf *message-window-gravity* :center
+      *input-window-gravity* :center
       *window-border-style* :thin)
 
 ;; Mode-line configuration
