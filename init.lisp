@@ -9,6 +9,8 @@
       *input-window-gravity* :center
       *window-border-style* :thin)
 
+(set-prefix-key (kbd "Menu"))
+
 ;; Mode-line configuration
 (setf *mode-line-timeout* 2)
 
