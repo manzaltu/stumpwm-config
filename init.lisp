@@ -11,6 +11,19 @@
 
 (set-prefix-key (kbd "Menu"))
 
+(define-key *root-map* (kbd "e") "move-focus up")
+(define-key *root-map* (kbd "d") "move-focus down")
+(define-key *root-map* (kbd "s") "move-focus left")
+(define-key *root-map* (kbd "f") "move-focus right")
+(define-key *root-map* (kbd "C-e") "move-window up")
+(define-key *root-map* (kbd "C-d") "move-window down")
+(define-key *root-map* (kbd "C-s") "move-window left")
+(define-key *root-map* (kbd "C-f") "move-window right")
+(define-key *root-map* (kbd "SPC") "emacs")
+(define-key *root-map* (kbd "v") "hsplit")
+(define-key *root-map* (kbd "V") "vsplit")
+(define-key *root-map* (kbd "g") "fselect")
+
 ;; Mode-line configuration
 (setf *mode-line-timeout* 2)
 
