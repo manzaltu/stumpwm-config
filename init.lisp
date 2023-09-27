@@ -8,6 +8,13 @@
 
 (in-package :stumpwm)
 
+;; Add stumpish to PATH
+(let ((stumpish-folder-path
+        (namestring (merge-pathnames "modules/util/stumpish" *data-dir*))))
+  (setf (getenv "PATH") (concatenate
+                         'string
+                         (getenv "PATH") ":" stumpish-folder-path)))
+
 ;; General configuration
 (setf *message-window-gravity* :center
       *input-window-gravity* :center
