@@ -2,6 +2,10 @@
 ;;
 ;; StumpWM configuration file
 
+;; Init slynk for Emacs integration
+(ql:quickload :slynk)
+(slynk:create-server :dont-close t)
+
 (in-package :stumpwm)
 
 ;; General configuration
