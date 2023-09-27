@@ -20,6 +20,8 @@
 (define-key *root-map* (kbd "C-s") "move-window left")
 (define-key *root-map* (kbd "C-f") "move-window right")
 (define-key *root-map* (kbd "SPC") "emacs")
+(define-key *root-map* (kbd "RET") "exec")
+(define-key *root-map* (kbd "DEL") "expose")
 (define-key *root-map* (kbd "v") "hsplit")
 (define-key *root-map* (kbd "V") "vsplit")
 (define-key *root-map* (kbd "g") "fselect")
