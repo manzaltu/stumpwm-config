@@ -60,3 +60,6 @@
 (let ((personal-file-path (merge-pathnames "personal.lisp" *data-dir*)))
   (when (probe-file personal-file-path)
     (load personal-file-path)))
+
+;; Start Emacs
+(emacs)
