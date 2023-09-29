@@ -65,6 +65,8 @@
 (define-key *top-map* (kbd "s-N") "number")
 (define-key *top-map* (kbd "s-F11") "fullscreen")
 (define-key *top-map* (kbd "s-i") "info")
+(define-key *top-map* (kbd "s-j") "float-this")
+(define-key *top-map* (kbd "s-J") "unfloat-this")
 
 ;; Mode-line configuration
 (setf *mode-line-timeout* 2)
