@@ -4,7 +4,7 @@
 
 ;; Init slynk for Emacs integration
 (ql:quickload :slynk)
-(slynk:create-server :dont-close t)
+(ignore-errors (slynk:create-server :dont-close t))
 
 (in-package :stumpwm)
 
