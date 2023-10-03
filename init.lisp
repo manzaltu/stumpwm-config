@@ -67,6 +67,9 @@
 (define-key *top-map* (kbd "s-i") "info")
 (define-key *top-map* (kbd "s-j") "float-this")
 (define-key *top-map* (kbd "s-J") "unfloat-this")
+(define-key *top-map* (kbd "s-F1") "exec pactl set-sink-volume @DEFAULT_SINK@ -5%")
+(define-key *top-map* (kbd "s-F2") "exec pactl set-sink-volume @DEFAULT_SINK@ +5%")
+(define-key *top-map* (kbd "s-F3") "exec pactl set-sink-mute @DEFAULT_SINK@ toggle")
 
 ;; Mode-line configuration
 (setf *mode-line-timeout* 2)
