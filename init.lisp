@@ -57,6 +57,7 @@
 (define-key *top-map* (kbd "s--") "fclear")
 (define-key *top-map* (kbd "s-z") "only")
 (define-key *top-map* (kbd "s-q") "quit-confirm")
+(define-key *top-map* (kbd "s-Q") "restart-hard")
 (define-key *top-map* (kbd "s-+") "balance-frames")
 (define-key *top-map* (kbd "s-u") "next-urgent")
 (define-key *top-map* (kbd "s-RET") "expose")
