@@ -72,6 +72,7 @@
 (define-key *top-map* (kbd "s-F1") "exec pactl set-sink-volume @DEFAULT_SINK@ -5%")
 (define-key *top-map* (kbd "s-F2") "exec pactl set-sink-volume @DEFAULT_SINK@ +5%")
 (define-key *top-map* (kbd "s-F3") "exec pactl set-sink-mute @DEFAULT_SINK@ toggle")
+(define-key *top-map* (kbd "Print") "exec flameshot gui")
 
 ;; Keyboard layout
 (defcommand toggle-kb-layout-us-il () ()
