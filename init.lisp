@@ -73,6 +73,15 @@
 (define-key *top-map* (kbd "s-F2") "exec pactl set-sink-volume @DEFAULT_SINK@ +5%")
 (define-key *top-map* (kbd "s-F3") "exec pactl set-sink-mute @DEFAULT_SINK@ toggle")
 
+;; Keyboard layout
+(defcommand toggle-kb-layout-us-il () ()
+  "Toggle between a us and il keyboard layouts."
+  (let ((us-layout (cl-ppcre:scan "layout:\\s*us"
+                                  (run-shell-command "setxkbmap -query" t))))
+    (if us-layout
+        (run-shell-command "setxkbmap il")
+        (run-shell-command "setxkbmap us"))))
+
 ;; Mode-line configuration
 (setf *mode-line-timeout* 2)
 
