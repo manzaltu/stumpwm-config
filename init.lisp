@@ -82,6 +82,8 @@
         (run-shell-command "setxkbmap il")
         (run-shell-command "setxkbmap us"))))
 
+(define-key *top-map* (kbd "s-DEL") "toggle-kb-layout-us-il")
+
 ;; Mode-line configuration
 (setf *mode-line-timeout* 2)
 
