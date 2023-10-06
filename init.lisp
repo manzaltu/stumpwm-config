@@ -24,6 +24,7 @@
 (set-prefix-key (kbd "Menu"))
 
 (define-key *top-map* (kbd "s-SPC") "emacs")
+(define-key *top-map* (kbd "s-ESC") "exec killall -USR2 emacs")
 (define-key *top-map* (kbd "s-t") "exec xterm")
 (define-key *top-map* (kbd "s-b") "banish")
 (define-key *top-map* (kbd "s-x") "exec")
