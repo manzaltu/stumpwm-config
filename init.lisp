@@ -19,7 +19,8 @@
 (setf *message-window-gravity* :center
       *input-window-gravity* :center
       *window-border-style* :thin
-      *mouse-focus-policy* :click)
+      *mouse-focus-policy* :click
+      *suppress-frame-indicator* t)
 
 (set-prefix-key (kbd "Menu"))
 
