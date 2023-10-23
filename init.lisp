@@ -46,6 +46,8 @@
 (define-key *top-map* (kbd "s-C-D") "exchange-direction down")
 (define-key *top-map* (kbd "s-C-S") "exchange-direction left")
 (define-key *top-map* (kbd "s-C-F") "exchange-direction right")
+(define-key *top-map* (kbd "s-n") "next-in-frame")
+(define-key *top-map* (kbd "s-p") "prev-in-frame")
 (define-key *top-map* (kbd "s-C-n") "pull-hidden-next")
 (define-key *top-map* (kbd "s-C-p") "pull-hidden-previous")
 (define-key *top-map* (kbd "s-TAB") "pull-hidden-other")
