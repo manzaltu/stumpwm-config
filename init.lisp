@@ -50,7 +50,7 @@
 (define-key *top-map* (kbd "s-p") "prev-in-frame")
 (define-key *top-map* (kbd "s-C-n") "pull-hidden-next")
 (define-key *top-map* (kbd "s-C-p") "pull-hidden-previous")
-(define-key *top-map* (kbd "s-DEL") "pull-hidden-other")
+(define-key *top-map* (kbd "s-DEL") "other-window")
 (define-key *top-map* (kbd "s-c") "remove")
 (define-key *top-map* (kbd "s-v") "hsplit")
 (define-key *top-map* (kbd "s-V") "vsplit")
