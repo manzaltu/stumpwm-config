@@ -50,7 +50,7 @@
 (define-key *top-map* (kbd "s-p") "prev-in-frame")
 (define-key *top-map* (kbd "s-C-n") "pull-hidden-next")
 (define-key *top-map* (kbd "s-C-p") "pull-hidden-previous")
-(define-key *top-map* (kbd "s-TAB") "pull-hidden-other")
+(define-key *top-map* (kbd "s-DEL") "pull-hidden-other")
 (define-key *top-map* (kbd "s-c") "remove")
 (define-key *top-map* (kbd "s-v") "hsplit")
 (define-key *top-map* (kbd "s-V") "vsplit")
@@ -87,7 +87,7 @@
         (run-shell-command "setxkbmap il")
         (run-shell-command "setxkbmap us"))))
 
-(define-key *top-map* (kbd "s-DEL") "toggle-kb-layout-us-il")
+(define-key *top-map* (kbd "s-TAB") "toggle-kb-layout-us-il")
 
 ;; Mode-line configuration
 (setf *mode-line-timeout* 2)
