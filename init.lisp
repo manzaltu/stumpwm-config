@@ -29,7 +29,7 @@
 (define-key *top-map* (kbd "s-t") "exec kitty")
 (define-key *top-map* (kbd "s-b") "banish")
 (define-key *top-map* (kbd "s-x") "exec")
-(define-key *top-map* (kbd "s-g") "abort")
+(define-key *top-map* (kbd "s-C-g") "abort")
 (define-key *top-map* (kbd "s-;") "colon")
 (define-key *top-map* (kbd "s-:") "eval")
 (define-key *top-map* (kbd "s-m") "lastmsg")
