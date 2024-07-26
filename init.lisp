@@ -129,7 +129,7 @@
 
 (setf *time-modeline-string* "%a %b %e %Y %k:%M")
 
-(setf *screen-mode-line-format* "[^B%n^b] %W ^> %C %M %l %B ^B%d^b")
+(setf *screen-mode-line-format* "%g | %W ^> %C %M %l %B ^B%d^b")
 
 ;; Optionally, load personal settings
 (let ((personal-file-path (merge-pathnames "personal.lisp" *data-dir*)))
