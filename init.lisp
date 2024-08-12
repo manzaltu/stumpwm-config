@@ -22,7 +22,7 @@
       *mouse-focus-policy* :click
       *suppress-frame-indicator* t)
 
-(set-prefix-key (kbd "Menu"))
+(set-prefix-key (kbd "s-Insert"))
 
 (defvar *group-key-map* (make-sparse-keymap))
 (define-key *group-key-map* (kbd "s-g") "groups")
