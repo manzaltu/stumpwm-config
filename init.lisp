@@ -22,6 +22,8 @@
       *mouse-focus-policy* :click
       *suppress-frame-indicator* t)
 
+(setf *window-format* "%m%n%s%50c")
+
 (set-prefix-key (kbd "s-Insert"))
 
 (defvar *group-key-map* (make-sparse-keymap))
