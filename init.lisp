@@ -24,6 +24,13 @@
 
 (setf *window-format* "%m%n%s%50c")
 
+(defvar *my-cache-dir-path* (merge-pathnames ".cache/" *data-dir*)
+  "Config cache directory path")
+
+(defun my-cache-path (filename)
+  "Return a valid file path for FILENAME under the cache directory."
+  (merge-pathnames *my-cache-dir-path* filename))
+
 ;; Keybindings
 (set-prefix-key (kbd "s-Insert"))
 
