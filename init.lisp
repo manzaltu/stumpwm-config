@@ -24,6 +24,7 @@
 
 (setf *window-format* "%m%n%s%50c")
 
+;; Keybindings
 (set-prefix-key (kbd "s-Insert"))
 
 (defvar *group-key-map* (make-sparse-keymap))
