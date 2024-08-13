@@ -146,6 +146,17 @@
   (when (probe-file window-rules-file-path)
     (restore-window-placement-rules window-rules-file-path)))
 
+;; Do not open new windows over Emacs
+(defun my-new-window-preferred-frame (windows)
+  "Return new window frame preferences."
+  (let* ((current-window (stumpwm:current-window))
+         (window-class (when current-window (stumpwm:window-class current-window))))
+    (if (string= window-class "Emacs")
+        '(:empty :unfocused)
+        '(:focued))))
+
+(setf *new-window-preferred-frame* #'my-new-window-preferred-frame)
+
 ;; Optionally, load personal settings
 (let ((personal-file-path (merge-pathnames "personal.lisp" *data-dir*)))
   (when (probe-file personal-file-path)
