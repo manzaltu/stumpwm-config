@@ -141,6 +141,11 @@
 
 (setf *screen-mode-line-format* "%g | %W ^> %C %M %l %B ^B%d^b")
 
+;; Load window placement rules
+(let ((window-rules-file-path (my-cache-path "window-rules.lisp")))
+  (when (probe-file window-rules-file-path)
+    (restore-window-placement-rules window-rules-file-path)))
+
 ;; Optionally, load personal settings
 (let ((personal-file-path (merge-pathnames "personal.lisp" *data-dir*)))
   (when (probe-file personal-file-path)
