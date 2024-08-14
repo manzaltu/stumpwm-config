@@ -129,6 +129,8 @@
   "Display bindings for the top keymap."
   (stumpwm::display-bindings-for-keymaps nil stumpwm::*top-map*))
 
+(define-key *help-map* (kbd "s-h") "help-topmap")
+
 ;; Mode-line configuration
 (setf *mode-line-timeout* 2)
 
