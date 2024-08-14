@@ -35,7 +35,7 @@
 (set-prefix-key (kbd "s-Insert"))
 
 (defvar *group-key-map* (make-sparse-keymap))
-(define-key *group-key-map* (kbd "s-g") "groups")
+(define-key *group-key-map* (kbd "s-g") "vgroups")
 (define-key *group-key-map* (kbd "s-c") "gnew")
 (define-key *group-key-map* (kbd "s-o") "gother")
 (define-key *group-key-map* (kbd "s-s") "gselect")
