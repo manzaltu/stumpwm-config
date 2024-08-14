@@ -124,6 +124,11 @@
 
 (define-key *top-map* (kbd "s-TAB") "toggle-kb-layout-us-il")
 
+;; Top keymap help
+(defcommand help-topmap () ()
+  "Display bindings for the top keymap."
+  (stumpwm::display-bindings-for-keymaps nil stumpwm::*top-map*))
+
 ;; Mode-line configuration
 (setf *mode-line-timeout* 2)
 
