@@ -103,6 +103,7 @@
 (define-key *top-map* (kbd "s-k") "delete")
 (define-key *top-map* (kbd "s-K") "kill")
 (define-key *top-map* (kbd "s-w") "windowlist")
+(define-key *top-map* (kbd "s-W") "repack-window-numbers")
 (define-key *top-map* (kbd "s-^") "number")
 (define-key *top-map* (kbd "s-F11") "fullscreen")
 (define-key *top-map* (kbd "s-i") "info")
