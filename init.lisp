@@ -91,6 +91,7 @@
 (define-key *top-map* (kbd "s-V") "vsplit")
 (define-key *top-map* (kbd "s-r") "iresize")
 (define-key *top-map* (kbd "s-R") "redisplay")
+(define-key *top-map* (kbd "s-C-r") "refresh-heads")
 (define-key *top-map* (kbd "s-o") "fother")
 (define-key *top-map* (kbd "s-F") "fselect")
 (define-key *top-map* (kbd "s--") "fclear")
