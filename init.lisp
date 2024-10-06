@@ -188,5 +188,9 @@
   (when (probe-file personal-file-path)
     (load personal-file-path)))
 
+;; Setup frame
+(my-vsplit-3)
+(move-focus :right)
+
 ;; Start Emacs
 (emacs)
