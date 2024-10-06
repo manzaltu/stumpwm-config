@@ -116,6 +116,22 @@
 (define-key *top-map* (kbd "s-F3") "exec pactl set-sink-mute @DEFAULT_SINK@ toggle")
 (define-key *top-map* (kbd "Print") "exec flameshot gui")
 
+;; Frame split helpers
+(defun my-vsplit-three (&key (ratio .3) (group (current-group)) (dir :column))
+  "Split frame into 3 using the provided RATIO."
+  (let* ((split-1 (- 1 ratio))
+         (split-2 (* ratio (/ 1 split-1))))
+    (only)
+    (stumpwm::split-frame-in-dir group dir split-1)
+    (stumpwm::split-frame-in-dir group dir split-2)
+    ratio))
+
+(defcommand (my-vsplit-3 stumpwm::tile-group) (&optional (ratio ".25"))
+    (:string)
+  (my-vsplit-three :ratio (read-from-string ratio)))
+
+(define-key *top-map* (kbd "s-a") "my-vsplit-3")
+
 ;; Keyboard layout
 (defcommand toggle-kb-layout-us-il () ()
   "Toggle between a us and il keyboard layouts."
