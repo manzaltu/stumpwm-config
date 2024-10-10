@@ -69,8 +69,6 @@
 (define-key *top-map* (kbd "s-C-F") "exchange-direction right")
 (define-key *top-map* (kbd "s-n") "next-in-frame")
 (define-key *top-map* (kbd "s-p") "prev-in-frame")
-(define-key *top-map* (kbd "s-N") "pull-hidden-next")
-(define-key *top-map* (kbd "s-P") "pull-hidden-previous")
 (define-key *top-map* (kbd "s-C-n") "gnext")
 (define-key *top-map* (kbd "s-C-p") "gprev")
 (define-key *top-map* (kbd "s-C-N") "gnext-with-window")
