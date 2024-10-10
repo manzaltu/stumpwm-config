@@ -39,7 +39,6 @@
 (define-key *group-key-map* (kbd "s-g") "gnew")
 (define-key *group-key-map* (kbd "s-o") "gother")
 (define-key *group-key-map* (kbd "s-s") "gselect")
-(define-key *group-key-map* (kbd "s-l") "grouplist")
 (define-key *group-key-map* (kbd "s-m") "gmove")
 (define-key *group-key-map* (kbd "s-M") "gmove-marked")
 (define-key *group-key-map* (kbd "s-c") "gkill")
