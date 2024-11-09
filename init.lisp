@@ -185,9 +185,14 @@
   (when (probe-file personal-file-path)
     (load personal-file-path)))
 
-;; Setup frame
-(my-vsplit-3)
-(move-focus :right)
+;; If on widescreen, split the screen to 3 and select the frame in the center
+(let ((wide-screen-p
+        (>= (/ (stumpwm:screen-width (stumpwm:current-screen))
+               (stumpwm:screen-height (stumpwm:current-screen)))
+            32/9)))
+  (when wide-screen-p
+    (my-vsplit-3)
+    (move-focus :right)))
 
 ;; Start Emacs
 (emacs)
