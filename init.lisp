@@ -144,6 +144,10 @@
 (load-module "end-session")
 (define-key *top-map* (kbd "s-F12") "end-session")
 
+;; App menu
+(load-module "app-menu")
+(define-key *top-map* (kbd "s-/") "show-menu")
+
 ;; Top keymap help
 (defcommand help-topmap () ()
   "Display bindings for the top keymap."
