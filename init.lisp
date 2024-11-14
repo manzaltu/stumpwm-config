@@ -144,6 +144,7 @@
 (load-module "clipboard-history")
 (setf *clipboard-poll-timeout* 2)
 (clipboard-history:start-clipboard-manager)
+(define-key *top-map* (kbd "s-y") "show-clipboard-history")
 
 ;; End session
 (load-module "end-session")
