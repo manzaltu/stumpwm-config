@@ -140,6 +140,11 @@
 
 (define-key *top-map* (kbd "s-TAB") "toggle-kb-layout-us-il")
 
+;; Clipboard history
+(load-module "clipboard-history")
+(setf *clipboard-poll-timeout* 2)
+(clipboard-history:start-clipboard-manager)
+
 ;; End session
 (load-module "end-session")
 (define-key *top-map* (kbd "s-F12") "end-session")
