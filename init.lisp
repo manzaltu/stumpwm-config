@@ -140,6 +140,10 @@
 
 (define-key *top-map* (kbd "s-TAB") "toggle-kb-layout-us-il")
 
+;; End session
+(load-module "end-session")
+(define-key *top-map* (kbd "s-F12") "end-session")
+
 ;; Top keymap help
 (defcommand help-topmap () ()
   "Display bindings for the top keymap."
