@@ -137,6 +137,12 @@
 
 (define-key *top-map* (kbd "s-TAB") "toggle-kb-layout-us-il")
 
+;; Volume control
+(load-module "amixer")
+(define-key *top-map* (kbd "s-F1") "amixer-master-1-")
+(define-key *top-map* (kbd "s-F2") "amixer-master-1+")
+(define-key *top-map* (kbd "s-F3") "amixer-master-toggle")
+
 ;; Clipboard history
 (load-module "clipboard-history")
 (setf *clipboard-poll-timeout* 2)
