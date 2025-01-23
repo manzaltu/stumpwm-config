@@ -44,7 +44,7 @@
 (define-key *group-key-map* (kbd "s-c") "gkill")
 (define-key *group-key-map* (kbd "s-r") "grename")
 
-(define-key *top-map* (kbd "s-SPC") "emacs")
+(define-key *top-map* (kbd "s-RET") "emacs")
 (define-key *top-map* (kbd "s-ESC") "exec killall -USR2 emacs")
 (define-key *top-map* (kbd "s-t") "exec kitty")
 (define-key *top-map* (kbd "s-b") "banish")
@@ -97,7 +97,7 @@
 (define-key *top-map* (kbd "s-Q") "restart-hard")
 (define-key *top-map* (kbd "s-+") "balance-frames")
 (define-key *top-map* (kbd "s-u") "next-urgent")
-(define-key *top-map* (kbd "s-RET") "expose")
+(define-key *top-map* (kbd "s-SPC") "expose")
 (define-key *top-map* (kbd "s-Delete") "delete")
 (define-key *top-map* (kbd "s-C-Delete") "kill")
 (define-key *top-map* (kbd "s-w") "windowlist")
