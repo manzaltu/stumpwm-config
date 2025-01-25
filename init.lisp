@@ -45,7 +45,7 @@
 (define-key *group-key-map* (kbd "s-r") "grename")
 
 (define-key *top-map* (kbd "s-RET") "emacs")
-(define-key *top-map* (kbd "s-ESC") "exec killall -USR2 emacs")
+(define-key *top-map* (kbd "s-DEL") "exec killall -USR2 emacs")
 (define-key *top-map* (kbd "s-t") "exec kitty")
 (define-key *top-map* (kbd "s-b") "banish")
 (define-key *top-map* (kbd "s-x") "exec")
@@ -72,7 +72,7 @@
 (define-key *top-map* (kbd "s-M-k") "gprev")
 (define-key *top-map* (kbd "s-M-J") "gnext-with-window")
 (define-key *top-map* (kbd "s-M-K") "gprev-with-window")
-(define-key *top-map* (kbd "s-DEL") "other-window")
+(define-key *top-map* (kbd "s-ESC") "other-window")
 (define-key *top-map* (kbd "s-g") *group-key-map*)
 (define-key *top-map* (kbd "s-1") "gselect 1")
 (define-key *top-map* (kbd "s-2") "gselect 2")
