@@ -24,6 +24,9 @@
 
 (setf *window-format* "%m%n%s%50c")
 
+;; Start frame number map from 1
+(setf *frame-number-map* "123456789abcdefghijklmnopqrstuvwxyz")
+
 (defvar *my-cache-dir-path* (merge-pathnames ".cache/" *data-dir*)
   "Config cache directory path")
 
