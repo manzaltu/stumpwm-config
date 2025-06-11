@@ -138,17 +138,6 @@
 
 (define-key *top-map* (kbd "s-a") "my-vsplit-3")
 
-;; Keyboard layout
-(defcommand toggle-kb-layout-us-il () ()
-  "Toggle between a us and il keyboard layouts."
-  (let ((us-layout (cl-ppcre:scan "layout:\\s*us"
-                                  (run-shell-command "setxkbmap -query" t))))
-    (if us-layout
-        (run-shell-command "setxkbmap il")
-        (run-shell-command "setxkbmap us"))))
-
-(define-key *top-map* (kbd "s-TAB") "toggle-kb-layout-us-il")
-
 ;; Volume control
 (load-module "amixer")
 (define-key *top-map* (kbd "s-F1") "amixer-master-1-")
