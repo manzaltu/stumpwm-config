@@ -218,7 +218,7 @@
          (window-class (when current-window (stumpwm:window-class current-window))))
     (if (string= window-class "Emacs")
         '(:empty :unfocused)
-        '(:focued))))
+        '(:empty :focued))))
 
 (setf *new-window-preferred-frame* #'my-new-window-preferred-frame)
 
