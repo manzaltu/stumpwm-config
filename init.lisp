@@ -158,30 +158,6 @@
 (load-module "app-menu")
 (define-key *top-map* (kbd "s-Menu") "show-menu")
 
-;; Notify
-(load-module "notify")
-
-;; Custom notification function to show in bottom-right
-(defun show-notification-bottom-right (app icon summary body)
-  "Show notifications in the bottom-right corner"
-  (declare (ignore app icon))
-  (let ((*message-window-gravity* :bottom-right)
-        (*message-window-padding* 40)
-        (*message-window-y-padding* 30))
-    (message "~%^R^B^1 *** Notification *** ^n~%~% ~%^B^3~A~%~% ~%^B^7~A~%"
-             (notify::rewrap-body
-              summary
-              :max-lines notify:*notify-server-max-title-lines*
-              :show-ellipsis t)
-             (notify::rewrap-body
-              body
-              :max-lines notify:*notify-server-max-body-lines*
-              :show-ellipsis t))))
-
-;; Set the custom function as the notification handler
-(setf notify::*notification-received-hook* '(show-notification-bottom-right))
-(notify:notify-server-toggle)
-
 ;; Top keymap help
 (defcommand help-topmap () ()
   "Display bindings for the top keymap."
