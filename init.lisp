@@ -84,6 +84,7 @@
 (define-key *top-map* (kbd "s-M-k") "gprev")
 (define-key *top-map* (kbd "s-M-J") "gnext-with-window")
 (define-key *top-map* (kbd "s-M-K") "gprev-with-window")
+(define-key *top-map* (kbd "s-ESC") "exec dunstctl close")
 (define-key *top-map* (kbd "s-g") *group-key-map*)
 (define-key *top-map* (kbd "s-M-1") "gselect 1")
 (define-key *top-map* (kbd "s-M-2") "gselect 2")
