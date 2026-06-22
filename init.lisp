@@ -101,7 +101,7 @@
 (define-key *top-map* (kbd "s-r") "iresize")
 (define-key *top-map* (kbd "s-R") "redisplay")
 (define-key *top-map* (kbd "s-M-r") "refresh-heads")
-(define-key *top-map* (kbd "s-o") "fother")
+(define-key *top-map* (kbd "s-M-o") "fother")
 (define-key *top-map* (kbd "s-F") "fselect")
 (define-key *top-map* (kbd "s--") "fclear")
 (define-key *top-map* (kbd "s-C") "only")
