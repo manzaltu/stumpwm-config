@@ -157,7 +157,7 @@
 
 ;; App menu
 (load-module "app-menu")
-(define-key *top-map* (kbd "s-Menu") "show-menu")
+(define-key *top-map* (kbd "s-S-F1") "show-menu")
 
 ;; Top keymap help
 (defcommand help-topmap () ()
