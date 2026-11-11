@@ -175,6 +175,7 @@
 
 ;; Add mode-line modules
 (load-module "cpu")
+(setf cpu::*cpu-modeline-fmt* "%c (%f)")
 (load-module "battery-portable")
 (load-module "mem")
 (load-module "net")
