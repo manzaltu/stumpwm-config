@@ -120,7 +120,7 @@
 (define-key *top-map* (kbd "s-i") "info")
 (define-key *top-map* (kbd "s-p") "float-this")
 (define-key *top-map* (kbd "s-P") "unfloat-this")
-(define-key *top-map* (kbd "s-l") "exec xsecurelock")
+(define-key *top-map* (kbd "s-l") "exec loginctl lock-session")
 (define-key *top-map* (kbd "Print") "exec flameshot gui")
 
 ;; Frame split helpers
